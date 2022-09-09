@@ -30,8 +30,15 @@ SOONG_CONFIG_NAMESPACES += hentaiGlobalVars
 SOONG_CONFIG_hentaiGlobalVars += \
     target_surfaceflinger_fod_lib
 
+SOONG_CONFIG_NAMESPACES += hentaiQcomVars
+SOONG_CONFIG_hentaiQcomVars += \
+    supports_extended_compress_format
+
 # Set default values
 TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
+
+# Soong bool variables
+SOONG_CONFIG_hentaiQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 
 # Soong value variables
 SOONG_CONFIG_hentaiGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)

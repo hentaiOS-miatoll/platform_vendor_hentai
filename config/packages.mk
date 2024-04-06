@@ -15,5 +15,6 @@
 #
 
 PRODUCT_PACKAGES += \
+    Flash \
     SystemUIGoogle \
     SettingsGoogle

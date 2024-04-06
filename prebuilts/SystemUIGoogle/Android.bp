@@ -6,6 +6,7 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
 }

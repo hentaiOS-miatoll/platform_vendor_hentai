@@ -1,0 +1,11 @@
+android_app_import {
+	name: "SystemUIGoogle",
+	owner: "hentaiOS",
+	apk: "SystemUIGoogle.apk",
+	overrides: ["SystemUI"],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}

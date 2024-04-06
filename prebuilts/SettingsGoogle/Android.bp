@@ -1,0 +1,11 @@
+android_app_import {
+	name: "SettingsGoogle",
+	owner: "hentaiOS",
+	apk: "SettingsGoogle.apk",
+	overrides: ["Settings"],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}

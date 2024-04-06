@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Allow vendor/extra to override any property by setting it first
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.theme_id=5 \

@@ -15,6 +15,5 @@
 #
 
 PRODUCT_PACKAGES += \
-    helluvaUpdater \
     SystemUIGoogle \
     SettingsGoogle
